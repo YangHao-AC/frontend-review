@@ -1,0 +1,12 @@
+{
+  "name": "frontend-review",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "console": "node playground/browser-console.mjs",
+    "run": "node playground/browser-console.mjs --run"
+  },
+  "devDependencies": {
+    "jsdom": "^26.1.0"
+  }
+}
