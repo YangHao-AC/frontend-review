@@ -1,49 +1,27 @@
-# 闭包、作用域、this 绑定
+# 第 2 课索引：闭包、作用域、this
 
-> 第 1 周 · 第 2 课
+> 各知识点已拆成独立文档，按顺序学习。
 
-## 1. 作用域
+## 文档列表
 
-### 三种作用域
+| 序号 | 文件 | 内容 | 状态 |
+|------|------|------|------|
+| 1 | [02-scope-var-let-const.md](./02-scope-var-let-const.md) | var / let / const 作用域 | ✅ |
+| 2 | [03-scope-chain.md](./03-scope-chain.md) | 作用域链 | ✅ |
+| 3 | [04-closure.md](./04-closure.md) | 闭包 | ✅ |
+| 4 | [05-for-loop-closure-trap.md](./05-for-loop-closure-trap.md) | for + setTimeout 陷阱 | ✅ |
+| 5 | [06-this-default-implicit.md](./06-this-default-implicit.md) | this 默认 & 隐式绑定 | 🔄 进行中 |
+| 6 | `07-this-call-apply-bind.md` | this 显式绑定 | 待学 |
+| 7 | `08-this-arrow-function.md` | 箭头函数 & this | 待学 |
 
-| 关键字 | 作用范围 | 备注 |
-|--------|----------|------|
-| `var` | 整个函数 | 没有块级，if 里声明外面也能访问 |
-| `let` | 当前{}块 | 出了块就报错 ReferenceError |
-| `const` | 同 let | 不能重新赋值 |
+## 第 1 课
 
-作用域链：内层找变量时，从当前作用域向外层一层层找，直到全局。
+| 文件 | 内容 |
+|------|------|
+| [01-prototype-chain.md](./01-prototype-chain.md) | 原型链 / new |
 
-### 我的实验记录
+## 学习约定
 
-（把控制台输出和报错贴在这里）
-
----
-
-## 2. 闭包
-闭包：内层函数引用外层变量，外层执行完毕后变量仍被保留。
-function createCounter() {
-  let count = 0;
-  return function () {
-    count++;
-    return count;
-  };
-}
-
-const counter = createCounter();
-
-console.log(counter()); // 1
-console.log(counter()); // 2
-console.log(counter()); // 3
-
----
-
-## 3. this 绑定
-
-（后面再填）
-
----
-
-## 4. 易错题
-
-（后面再填）
+- 每个文件：**概念 → 实践（含代码 + 答案）→ 我的笔记**
+- 文档里的答案用于**做完后对照**；对话中的练习不附答案
+- 代码实验：`npm run console`
