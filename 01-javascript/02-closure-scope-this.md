@@ -10,9 +10,9 @@
 | 2 | [03-scope-chain.md](./03-scope-chain.md) | 作用域链 | ✅ |
 | 3 | [04-closure.md](./04-closure.md) | 闭包 | ✅ |
 | 4 | [05-for-loop-closure-trap.md](./05-for-loop-closure-trap.md) | for + setTimeout 陷阱 | ✅ |
-| 5 | [06-this-default-implicit.md](./06-this-default-implicit.md) | this 默认 & 隐式绑定 | 🔄 进行中 |
-| 6 | `07-this-call-apply-bind.md` | this 显式绑定 | 待学 |
-| 7 | `08-this-arrow-function.md` | 箭头函数 & this | 待学 |
+| 5 | [06-this-default-implicit.md](./06-this-default-implicit.md) | this 默认 & 隐式绑定 | ✅ |
+| 6 | [07-this-call-apply-bind.md](./07-this-call-apply-bind.md) | call / apply / bind | ✅ |
+| 7 | [08-this-arrow-function.md](./08-this-arrow-function.md) | 箭头函数 & this | 🔄 进行中 |
 
 ## 第 1 课
 
